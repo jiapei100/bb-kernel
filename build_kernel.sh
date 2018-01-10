@@ -219,7 +219,7 @@ if [  -f "${DIR}/.yakbuild" ] ; then
 	. "${DIR}/recipe.sh"
 fi
 #/bin/sh -e "${DIR}/scripts/gcc.sh" || { exit 1 ; }
-#. "${DIR}/.CC"
+. "${DIR}/.CC"
 echo "CROSS_COMPILE=${CC}"
 if [ -f /usr/bin/ccache ] ; then
 	echo "ccache [enabled]"
