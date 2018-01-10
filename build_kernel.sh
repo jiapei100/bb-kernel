@@ -212,8 +212,8 @@ if [ -f "${DIR}/branch.expired" ] ; then
 	echo "-----------------------------"
 fi
 
-unset CC
-unset LINUX_GIT
+#unset CC
+#unset LINUX_GIT
 . "${DIR}/system.sh"
 if [  -f "${DIR}/.yakbuild" ] ; then
 	. "${DIR}/recipe.sh"
