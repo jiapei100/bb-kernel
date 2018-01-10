@@ -191,13 +191,13 @@ if [ ! -f "${DIR}/system.sh" ] ; then
 	cp -v "${DIR}/system.sh.sample" "${DIR}/system.sh"
 fi
 
-unset CC
-unset LINUX_GIT
+#unset CC
+#unset LINUX_GIT
 . "${DIR}/system.sh"
 if [  -f "${DIR}/.yakbuild" ] ; then
 	. "${DIR}/recipe.sh"
 fi
-/bin/sh -e "${DIR}/scripts/gcc.sh" || { exit 1 ; }
+#/bin/sh -e "${DIR}/scripts/gcc.sh" || { exit 1 ; }
 . "${DIR}/.CC"
 echo "CROSS_COMPILE=${CC}"
 if [ -f /usr/bin/ccache ] ; then
@@ -207,6 +207,7 @@ fi
 
 . "${DIR}/version.sh"
 export LINUX_GIT
+echo "LINUX_GIT=${LINUX_GIT}"
 
 if [ ! "${CORES}" ] ; then
 	CORES=$(getconf _NPROCESSORS_ONLN)
@@ -215,7 +216,7 @@ fi
 unset FULL_REBUILD
 #FULL_REBUILD=1
 if [ "${FULL_REBUILD}" ] ; then
-	/bin/sh -e "${DIR}/scripts/git.sh" || { exit 1 ; }
+	#/bin/sh -e "${DIR}/scripts/git.sh" || { exit 1 ; }
 
 	if [ "${RUN_BISECT}" ] ; then
 		/bin/sh -e "${DIR}/scripts/bisect.sh" || { exit 1 ; }
