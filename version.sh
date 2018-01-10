@@ -21,7 +21,8 @@ KERNEL_ARCH=arm
 #toolchain="gcc_linaro_gnueabihf_4_9"
 #toolchain="gcc_linaro_gnueabihf_5"
 #toolchain="gcc_linaro_gnueabihf_6"
-toolchain="gcc_linaro_gnueabihf_7"
+#toolchain="gcc_linaro_gnueabihf_7"
+toolchain="arm-linux-gnueabihf-gcc"
 #arm64
 #KERNEL_ARCH=arm64
 #toolchain="gcc_linaro_aarch64_gnu_5"
