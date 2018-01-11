@@ -15,7 +15,7 @@ fi
 #if CC is not set, a known working linaro based gcc compiler will be downloaded and utilized.
 #CC=<enter full path>/bin/arm-none-eabi-
 #CC=<enter full path>/bin/arm-linux-gnueabi-
-CC=/usr/bin/arm-linux-gnueabihf-
+CC=/media/jiapei/Data/Downloads/operatingsystems/gcc-linaro/gcc-linaro/bin/arm-linux-gnueabihf-
 
 ###OPTIONAL:
 
@@ -24,7 +24,7 @@ CC=/usr/bin/arm-linux-gnueabihf-
 
 ###OPTIONAL: LINUX_GIT: specify location of locally cloned git tree.
 #
-LINUX_GIT=/home/jiapei/Downloads/OperatingSystems/linuxkernel/linux/
+LINUX_GIT=/home/jiapei/Downloads/OperatingSystems/linuxkernel/linux-stable/
 
 ###OPTIONAL: MMC: (REQUIRED FOR RUNNING: tools/install_kernel.sh)
 #Note: This operates on raw disks, NOT PARTITIONS..
