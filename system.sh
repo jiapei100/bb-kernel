@@ -24,7 +24,7 @@ CC=/media/jiapei/Data/Downloads/operatingsystems/gcc-linaro/gcc-linaro/bin/arm-l
 
 ###OPTIONAL: LINUX_GIT: specify location of locally cloned git tree.
 #
-LINUX_GIT=/home/jiapei/Downloads/OperatingSystems/linuxkernel/linux-stable/
+LINUX_GIT=/media/jiapei/Data/Downloads/operatingsystems/kernel/linux-stable
 
 ###OPTIONAL: MMC: (REQUIRED FOR RUNNING: tools/install_kernel.sh)
 #Note: This operates on raw disks, NOT PARTITIONS..
