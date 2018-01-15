@@ -265,3 +265,4 @@ echo "Script Complete"
 echo "${KERNEL_UTS}" > kernel_version
 echo "eewiki.net: [user@localhost:~$ export kernel_version=${KERNEL_UTS}]"
 echo "-----------------------------"
+
